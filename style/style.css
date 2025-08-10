@@ -1,3 +1,5 @@
+/* RESET */
+
 *{
     margin: 0;
     padding: 0;
@@ -14,6 +16,8 @@ i{
 a{
     text-decoration: none;
 }
+
+/* HEADER STYLE */
 
 .header{
     background-color: rgb(50, 50, 50);
@@ -119,6 +123,8 @@ button {
     cursor: pointer;
 }
 
+/* SEARCHLOC STYLE */
+
 .serachloc{
     text-align: center;
     padding: 20px;
@@ -130,6 +136,8 @@ button {
     font-size: 40px;
     margin-bottom: 20px;
 }
+
+/* GALLERY STYLE */
 
 .gallery{
     text-align: center;
@@ -219,6 +227,8 @@ button {
     transition:transform 0.3s ease;
 }
 
+/* FOOTER STYLE */
+
 .footer{
     margin-top: 50px;
     background-color: rgba(50, 50, 50);
@@ -238,6 +248,8 @@ button {
     font-family: "Raleway", sans-serif;
     color: #ffffff;
 }
+
+/* RESPONSIVE */
 
 @media (max-width: 600px) {
   .header-logo {
