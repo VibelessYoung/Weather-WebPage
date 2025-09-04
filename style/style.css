@@ -229,24 +229,75 @@ button {
 
 /* FOOTER STYLE */
 
-.footer{
-    margin-top: 50px;
-    background-color: rgba(50, 50, 50);
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 50px 20px 20px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-container {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.footer-title{
-    border-bottom: 2px solid white;
-    font-family: "Bungee", sans-serif;
-    color: #ffffff;
-    margin: 12px;
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
 }
 
-.footer-text{
-    margin: 12px;
-    font-family: "Raleway", sans-serif;
-    color: #ffffff;
+.footer-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #f0a500;
+}
+
+.footer-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #f0a500;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #f0a500;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.85rem;
+    border-top: 1px solid #444;
+    padding-top: 15px;
 }
 
 /* RESPONSIVE */
