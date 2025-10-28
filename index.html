@@ -1,249 +1,202 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/style.css" />
 
     <!-- icons -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
     <!-- google fonts -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Indie+Flower&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Indie+Flower&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Your Weather</title>
+  </head>
 
-</head>
+  <!-- HEADER -->
 
-<!-- HEADER -->
- 
-<header class="header">
-
-    <img class="header-logo" src="./iamges/weather.png" alt="">
+  <header class="header">
+    <img class="header-logo" src="./iamges/weather.png" alt="" />
 
     <nav class="nav">
-
       <div class="mobile-menu-icon">
-    
         <i class="fa fa-bars"></i>
-  
       </div>
 
-        <ul class="nav-ul">
+      <ul class="nav-ul">
+        <li>
+          <a href=""><i class="fa-solid fa-house"></i>Home</a>
+        </li>
 
-            <li><a href=""><i class="fa-solid fa-house"></i>Home</a></li>
+        <li>
+          <a href=""><i class="fa-solid fa-cloud-bolt"></i>Weather</a>
+        </li>
 
-            <li><a href=""><i class="fa-solid fa-cloud-bolt"></i>Weather</a></li>
+        <li>
+          <a href=""><i class="fa-solid fa-address-book"></i>Contact</a>
+        </li>
 
-            <li><a href=""><i class="fa-solid fa-address-book"></i>Contact</a></li>
-
-            <li><a href=""><i class="fa-solid fa-search"></i>Search</a></li>
-
-        </ul>
-
+        <li>
+          <a href=""><i class="fa-solid fa-search"></i>Search</a>
+        </li>
+      </ul>
     </nav>
+  </header>
 
-</header>
+  <section class="header-banner">
+    <h1 class="header-title">YOUR WEATHER</h1>
 
-    <section class="header-banner">
+    <p class="banner-p">you can find your locationWeather in here :)</p>
+  </section>
 
-        <h1 class="header-title">YOUR WEATHER</h1>
+  <!-- SHOW WEATHER -->
 
-        <p class="banner-p">you can find your locationWeather in here :)</p>
-
-    </section>
-
-    <!-- SHOW WEATHER -->
-
-    <section class="serachloc">
-
-        
+  <section class="serachloc">
     <h1>Show</h1>
-  
+
     <button id="get-location">📍Get location</button>
-  
+
     <button id="save-local">💾Save</button>
-  
+
     <button id="reset">🔁Reset</button>
 
     <div id="weather-box">Loading...</div>
-  
+
     <div id="forecast-box">
-    
-    <h3>Five Day Later:</h3>
-    
-    <div id="forecast-container"></div>
-  
+      <h3>Five Day Later:</h3>
+
+      <div id="forecast-container"></div>
     </div>
+  </section>
 
-    </section>
+  <!-- GALLERY -->
 
-    <!-- GALLERY -->
-
-    <section class="gallery">
-
+  <section class="gallery">
     <h1 class="gallery-title">Popular Pics</h1>
 
-      <p class="gallery-p"> 
-                Suffered alteration in some, 
-                by injected humor or good day randomised booth anim 
-                8-bit hella wolf moon beard words.  
-      </p>
+    <p class="gallery-p">
+      Suffered alteration in some, by injected humor or good day randomised
+      booth anim 8-bit hella wolf moon beard words.
+    </p>
 
     <section class="gallery-images">
+      <div class="item">
+        <img class="g-img" src="iamges/sky1.jpg" />
 
-                <div class="item">
-
-                <img class="g-img" src="iamges/sky1.jpg">
-
-                <div class="popular-image-info">
-
-                <p><a href="#"> 07 Places</a></p>
-
-                </div>
-
-                </div>
-
-                <div class="item">
-
-                <img class="g-img" src="iamges/sky2.jpg">
-
-                <div class="popular-image-info">
-
-                <p><a href="#"> 03 Places</a></p>
-
-                </div>
-
-                </div>
-
-                <div class="item">
-
-                <img class="g-img" src="iamges/sky3.jpg">
-
-                <div class="popular-image-info">
-
-                <p><a href="#"> 10 Places</a></p>
-
-                </div>
-
-                </div>
-
-                <div class="item">
-
-                <img class="g-img" src="iamges/sky4.jpg">
-
-                <div class="popular-image-info">
-
-                <p><a href="#"> 02 Places</a></p>
-
-                </div>
-
-                </div>
-
-                <div class="item">
-
-                <img class="g-img" src="iamges/sky5.jpg">
-
-                <div class="popular-image-info">
-
-                    <p><a href="#"> 02 Places</a></p>
-
-                </div>
-
-                </div>
-
-                <div class="item">
-
-                <img class="g-img" src="iamges/sky6.jpg">
-
-                <div class="popular-image-info">
-
-                    <p><a href="#"> 02 Places</a></p>
-
-                </div>
-
-                </div>
-
-            </section>
-
-            </section>
-
-            <!-- FOOTER -->
-             
-        <footer class="footer">
-
-        <div class="footer-container">
-    
-    <!-- About -->
-    <div class="footer-section about">
-
-      <h2 class="footer-title">About Me</h2>
-
-      <p class="footer-text">Hi! I'm Amir, the creator of this website. I love coding, weather apps, and photography. Stay connected!</p>
-
-    </div>
-
-    <!-- Quick Links -->
-
-    <div class="footer-section links">
-
-      <h2 class="footer-title">Quick Links</h2>
-
-      <ul>
-
-        <li><a href="#">Home</a></li>
-
-        <li><a href="#">Weather</a></li>
-
-        <li><a href="#">Contact</a></li>
-
-        <li><a href="#">Gallery</a></li>
-
-      </ul>
-
-    </div>
-
-    <!-- Social Media -->
-
-    <div class="footer-section social">
-
-      <h2 class="footer-title">Follow Me</h2>
-
-      <div class="social-icons">
-
-        <a href="#"><i class="fab fa-instagram"></i></a>
-
-        <a href="#"><i class="fab fa-twitter"></i></a>
-
-        <a href="#"><i class="fab fa-facebook"></i></a>
-
-        <a href="#"><i class="fab fa-github"></i></a>
-
+        <div class="popular-image-info">
+          <p><a href="#"> 07 Places</a></p>
+        </div>
       </div>
 
+      <div class="item">
+        <img class="g-img" src="iamges/sky2.jpg" />
+
+        <div class="popular-image-info">
+          <p><a href="#"> 03 Places</a></p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img class="g-img" src="iamges/sky3.jpg" />
+
+        <div class="popular-image-info">
+          <p><a href="#"> 10 Places</a></p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img class="g-img" src="iamges/sky4.jpg" />
+
+        <div class="popular-image-info">
+          <p><a href="#"> 02 Places</a></p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img class="g-img" src="iamges/sky5.jpg" />
+
+        <div class="popular-image-info">
+          <p><a href="#"> 02 Places</a></p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img class="g-img" src="iamges/sky6.jpg" />
+
+        <div class="popular-image-info">
+          <p><a href="#"> 02 Places</a></p>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- About -->
+      <div class="footer-section about">
+        <h2 class="footer-title">About Me</h2>
+
+        <p class="footer-text">
+          Hi! I'm Amir, the creator of this website. I love coding, weather
+          apps, and photography. Stay connected!
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+
+      <div class="footer-section links">
+        <h2 class="footer-title">Quick Links</h2>
+
+        <ul>
+          <li><a href="#">Home</a></li>
+
+          <li><a href="#">Weather</a></li>
+
+          <li><a href="#">Contact</a></li>
+
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+
+      <div class="footer-section social">
+        <h2 class="footer-title">Follow Me</h2>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+
+          <a href="#"><i class="fab fa-twitter"></i></a>
+
+          <a href="#"><i class="fab fa-facebook"></i></a>
+
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
     </div>
 
-  </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Amir. All rights reserved.</p>
+    </div>
+  </footer>
 
-  <div class="footer-bottom">
-    <p>&copy; 2025 Amir. All rights reserved.</p>
-  </div>
-</footer>
+  <script src="config.js"></script>
 
-
-    <script src="config.js"></script>
-
-<body>
-    
-</body>
-
+  <body></body>
 </html>
